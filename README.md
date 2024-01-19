@@ -1,6 +1,6 @@
 # tk5-hercules
 
-Port of skunklabz' [tk4-hercules](https://github.com/skunklabz/tk4-hercules) docker file to [MVS 3.8j on Turnkey Version 5.2](https://www.prince-webdesign.nl/tk5), now running on Alpine Linux
+Port of skunklabz' [tk4-hercules](https://github.com/skunklabz/tk4-hercules) docker file to [MVS 3.8j with Turnkey Version 5.2](https://www.prince-webdesign.nl/tk5), now running on Alpine Linux
 
 ## Usage
 
