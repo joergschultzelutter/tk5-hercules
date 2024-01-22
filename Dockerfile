@@ -54,7 +54,7 @@ LABEL version="1.00"
 LABEL description="OS/VS2 MVS 3.8j Service Level 8505, Tur(n)key Level 5 Version 1.00"
 WORKDIR /tk5/
 COPY --from=builder /tk5/ .
-VOLUME [ "/tk5/conf","/tk5/local_conf","/tk5/local_scripts","/tk5/prt","/tk5/dasd","/tk5/pch","/tk5/jcl","tk5/log", "tk5/tape" ]
+VOLUME [ "/tk5/conf","/tk5/local_conf","/tk5/local_scripts","/tk5/prt","/tk5/dasd","/tk5/pch","/tk5/jcl","/tk5/log","/tk5/tape" ]
 RUN apk update && apk upgrade
 RUN apk add gcompat libstdc++ bash libbz2
 RUN cd /usr/lib && \
