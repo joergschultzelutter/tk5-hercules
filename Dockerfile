@@ -32,7 +32,7 @@
 #
 # For more information, please refer to <http://unlicense.org/>
 
-FROM alpine as builder
+FROM alpine AS builder
 
 WORKDIR /tk5/
 ADD https://www.prince-webdesign.nl/images/downloads/mvs-tk5.zip /tk5/
@@ -49,7 +49,7 @@ RUN rm -rf /tk5/hercules/darwin && \
     rm -rf /tk5/hercules/windows
 
 FROM alpine
-MAINTAINER jsl
+LABEL org.opencontainers.image.authors="jsl"
 LABEL version="1.00"
 LABEL description="OS/VS2 MVS 3.8j Service Level 8505, Tur(n)key Level 5 Version 1.00"
 WORKDIR /tk5/
